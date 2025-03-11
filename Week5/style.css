@@ -1,0 +1,11 @@
+.c1 {
+    color: yellow;
+    background-color: blue;
+    visibility: visible;
+}
+
+.c2 {
+    color: red;
+    background-color: green;
+    visibility: hidden;
+}

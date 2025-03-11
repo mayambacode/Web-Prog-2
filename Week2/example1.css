@@ -1,0 +1,92 @@
+form {
+    border: 0.25em solid green;
+    box-shadow: 0.25em 0.25em 0.2em #777;
+    margin: 0.35em;
+    padding: 0.5em;
+  }
+  
+  div {
+    margin: 0.5em 0.25em;
+  }
+  
+  input {
+    margin: 0.3em 0px;
+  }
+  
+  label,
+  legend,
+  input[type="submit"] {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="email"] {
+    background-color: #c8e6c9;
+    border: 0px;
+    border-bottom: 0.1em solid green;
+    border-top: 0.1em solid green;
+  }
+  
+  fieldset {
+    border: 0.1em solid green;
+  }
+  
+  fieldset,
+  input[type="submit"] {
+    border-radius: 5px;
+  }
+  
+  fieldset label {
+    display: inline;
+    margin: 0.25em 0.5em;
+  }
+  fieldset input {
+    margin-right: 0.25em;
+  }
+  
+  legend {
+    color: green;
+  }
+  
+  input[type="submit"] {
+    background-color: #c8e6c9;
+    border: 0.15em solid green;
+    padding: 0.3em;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: green;
+    color: white;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    div label,
+    div input {
+      display: block;
+    }
+    div input {
+      margin: 0.2em 0px;
+    }
+    fieldset label {
+      display: block;
+    }
+    form {
+      min-width: 400px;
+    }
+  }
+
+  #name:invalid {
+    color: red;
+  }
+  #name:valid {
+    color: green;
+  }
+  #name:required {
+background-color: rgb(231, 214, 141);
+  }
+
+
+  *:focus-visible {
+        color: aqua;
+  }
