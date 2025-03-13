@@ -1,0 +1,56 @@
+main {
+    display: grid;
+    grid-template-areas: "s1 s1"
+        "s2 s3";
+    grid-template-columns: 1fr 1fr;
+}
+
+#player {
+    grid-area: s1;
+}
+
+#computer {
+    grid-area: s2;
+}
+
+#results {
+    grid-area: s3;
+}
+
+.img-div, .info-div {
+    display: inline-block;
+}
+
+.img-div > img {
+    width: 150px;
+}
+
+.img-div > button {
+    display: block;
+    width: 100%;
+}
+
+.info-div {
+    vertical-align: top;
+}
+.info-div span,
+.choice span:last-child,
+.score {
+    font-weight: bold;
+}
+.score {
+    color: #34678A;
+}
+
+button {
+    background-color: #D6FBF8;
+    border-color: #34678A;
+    font-weight: bold;
+}
+button:hover {
+    background-color: #34678A;
+    color: white;
+}
+.hide {
+    visibility: hidden;
+}
