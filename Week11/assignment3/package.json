@@ -8,8 +8,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "chinese-year": "^1.0.9"
-  }
+  },
+  "description": ""
 }
