@@ -16,3 +16,13 @@ app.listen(app.get("port"), () => {
 
 // route get requests to index page
 app.get("/zodiac/index", homeController.renderIndex);
+
+app.use(
+    express.urlencoded({
+      extended: false
+    })
+  );
+
+  app.use("/zodiac/getyear", animalController.getAnimal);
+
+  app.post("/zodiac/getyear", homeController.renderResult);
