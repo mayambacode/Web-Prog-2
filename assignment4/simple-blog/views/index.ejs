@@ -1,13 +1,13 @@
 <%- include("partials/header") %>
-
+<div class="blogposts">
 <h2>All Posts</h2>
 <ul>
   <% posts.forEach(post => { %>
-    <li>
+    
       <a href="/posts/<%= post.id %>"><%= post.title %></a>
       <p><%= post.content.slice(0, 100) %>...</p>
-    </li>
+    
   <% }) %>
 </ul>
-
+</div>
 <%- include("partials/footer") %>
